@@ -1,4 +1,5 @@
 h1 {
+    
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     
@@ -7,6 +8,14 @@ h1 {
     
 }
 
+.page-header {
+    color: blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
 
 section {
     display: flex;
@@ -18,6 +27,7 @@ section {
 
 article {
     border: 1px solid rgb(145, 56, 56);
+    
     border-radius: 5px;
     padding: 10px;
     margin: 20px;
@@ -34,10 +44,13 @@ article {
     width: 0;
     height: 0;
     border-top: 30px solid rgb(238, 232, 232);
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
     border-right: 20px solid rgb(232, 225, 225);
     border-bottom: 20px solid transparent;
     border-left: 20px solid rgb(237, 227, 227);
-    
+    position: relative;
+    top: -15px
 
 }
 
@@ -45,10 +58,10 @@ article {
 
     width: 0;
     height: 0;
-    border-top: 30px solid rgb(23, 1, 1);
-    border-right: 20px solid rgb(40, 34, 34);
+    border-top: 30px solid rgb(201, 188, 188);
+    border-right: 20px solid rgb(67, 56, 56);
     border-bottom: 20px solid transparent;
-    border-left: 20px solid rgb(54, 53, 53);
+    border-left: 20px solid rgb(134, 117, 117);
 }
 
 /*article:nth-of-type(2) {
@@ -90,7 +103,6 @@ footer {
     bottom: 0px;
     width: 100%;
     height: 80px;
-    background-color: transparent;
    
   text-decoration: none;
    word-spacing: 4rem;
@@ -120,4 +132,16 @@ a {
 a:hover {
     color: red;
     
+}
+
+main {
+    margin: 10px;
+}
+
+li:hover {
+    color:blue;
+}
+
+button:hover {
+    color: blue;
 }
