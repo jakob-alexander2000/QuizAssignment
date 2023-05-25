@@ -9,12 +9,15 @@
 </head>
 <body>
     <header>
-        <h1>Quiz App</h1>
+        <h1>QUIZ APP</h1>
     </header>
     
         
         <section>
         <article>
+            <div class="bookmark">
+                
+            </div>
             <h2>Question #1</h2>
             <p>What property flips the axes in flexbox</p>
             <button onclick="showAnswer()">Show answer</button>
@@ -30,6 +33,7 @@
         </article>
 
         <article>
+            <div class="bookmark"></div>
             <h2>Question #2</h2>
             <p>What property flips the axes in flexbox</p>
             <button onclick="showAnswer()">Show answer</button>
@@ -45,6 +49,7 @@
         </article>
 
         <article>
+            <div class="bookmark"></div>
             <h2>Question #3</h2>
             <p>What property flips the axes in flexbox</p>
             <button onclick="showAnswer()">Show answer</button>
@@ -60,6 +65,7 @@
         </article>
 
         <article>
+            <div class="bookmark"></div>
             <h2>Question #4</h2>
             <p>What property flips the axes in flexbox</p>
             <button onclick="showAnswer()">Show answer</button>
@@ -77,18 +83,22 @@
 
         </section>
 
-        
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./bookmarks.html">Bookmarks</a></li>
+                    <li><a href="">Profile</a></li>
+                </ul>
+                    
+                    
+                    
+               
+            </nav>
+        </footer>
     
     
-    <footer>
-        <nav>
-            
-                <a href="">Home</a>
-                <a href="./bookmarks.html">Bookmarks</a>
-                <a href="">Profile</a>
-           
-        </nav>
-    </footer>
+    
     <script>
         function showAnswer() {
             document.getElementById("answer").innerHTML = "Flex-Direction";
