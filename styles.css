@@ -1,12 +1,12 @@
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
-    ;
-    width: 100%;
-    height: 70px;
-    background-color: rgb(246, 239, 239);
-    padding: 20px;
+    
+    background-color: transparent;
+    padding: 30px;
+    
 }
+
 
 section {
     display: flex;
@@ -41,6 +41,16 @@ article {
 
 }
 
+.bookmark:hover {
+
+    width: 0;
+    height: 0;
+    border-top: 30px solid rgb(23, 1, 1);
+    border-right: 20px solid rgb(40, 34, 34);
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid rgb(54, 53, 53);
+}
+
 /*article:nth-of-type(2) {
     flex:2;
 }*/
@@ -54,33 +64,35 @@ ul {
 
 }
 
-li {
-    display: inline-block;
-     
-}
+   
+
 
 .tags {
-    border: 1px solid lightslategray;
-    border-radius: 5px;
+    border: 1px solid rgb(212, 222, 232);
+    border-radius: 15% 15% 15% 15% ;
+    width: min-content;
     padding: 10px;
     margin: 10px;
     background-color: lightgray;
+    display: inline-block;
+    font-size: x-small;
 }
 
 
 footer {
     display: flex;
-    
+    font-size: larger;
     flex-direction: row;
     justify-content: center;
     position: fixed;
-    
+    padding-top: 30px;
+    margin-top: 10px;
     bottom: 0px;
     width: 100%;
-    height: 60px;
-    background-color: rgb(246, 239, 239);
+    height: 80px;
+    background-color: transparent;
    
-  
+  text-decoration: none;
    word-spacing: 4rem;
     z-index: 1;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -88,3 +100,24 @@ footer {
 
  
 
+#buttons li {
+    display: inline-block;
+ list-style: none;
+ padding: 5px;
+ margin: 5px;
+ border: 5px lighgray solid;
+ border-radius: 15px;
+ background: lightgray;
+ 
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    
+}
